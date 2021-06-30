@@ -1,0 +1,1 @@
+INSERT INTO users (name, email) VALUES ("admin", "admin@gmail.com");
