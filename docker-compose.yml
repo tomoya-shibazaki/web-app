@@ -10,9 +10,9 @@ services:
       - ./backend:/usr/src/server
 
   db:
+    platform: linux/x86_64 # for M1 chip support
     image: mysql:5.7
     container_name: db
-    build: ./docker/mysql
     restart: always
     tty: true
     environment:
