@@ -10,13 +10,12 @@ services:
       - ./backend:/usr/src/server
 
   db:
-    platform: linux/x86_64 # for M1 chip support
-    image: mysql:5.7
+    image: mysql/mysql-server:5.7.28
     container_name: db
     restart: always
     tty: true
     environment:
-      MYSQL_DATABASE: sample_db
+      MYSQL_DATABASE: e_learning_db
       MYSQL_USER: user
       MYSQL_PASSWORD: password
       MYSQL_ROOT_PASSWORD: password
