@@ -8,15 +8,12 @@ from sqlalchemy.orm import sessionmaker, scoped_session
 load_dotenv(verbose=True)
 
 dotenv_path = join(dirname(__file__), '.env')
-print('PATH ', dotenv_path)
 load_dotenv(dotenv_path)
 USER_NAME = os.environ.get("MYSQL_USER", 'user')
 PASSWORD = os.environ.get("MYSQL_PASSWORD", 'password')
 HOST = os.environ.get("MYSQL_HOST_NAME", 'db')
 DATABASE_NAME = os.environ.get("MYSQL_DATABASE", 'sample_db')
 
-H = os.environ.get("MYSQL_HOST_NAME")
-print('H ', H) 
 
 user_name = USER_NAME
 password = PASSWORD
