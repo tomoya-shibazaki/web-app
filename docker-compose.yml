@@ -15,7 +15,7 @@ services:
     restart: always
     tty: true
     environment:
-      MYSQL_DATABASE: e_learning_db
+      MYSQL_DATABASE: sample_db
       MYSQL_USER: user
       MYSQL_PASSWORD: password
       MYSQL_ROOT_PASSWORD: password
