@@ -29,25 +29,16 @@ jobs:
       run: |
         pip install pylint
         pylint ./backend
-        ...
 
     - name: Lint with black
       run: |
         pip install black
         black ./backend
-        ...
 
     - name: Lint with isort
       run: |
         pip install isort
         isort ./backend
-        ...
-
-    - name: Lint with pycodestyle
-      run: |
-        pip install pycodestyle
-        pycodestyle ./backend
-        ...
 
     - name: Lint with mypy
       run: |
