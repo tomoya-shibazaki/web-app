@@ -1,7 +1,8 @@
 """main"""
 from typing import List
-from fastapi import FastAPI
+
 from db import session
+from fastapi import FastAPI
 from models import Users
 from schemas import User
 
