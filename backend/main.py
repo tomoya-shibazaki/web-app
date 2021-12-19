@@ -13,6 +13,7 @@ async def root():
     """root api endpoint."""
     return {"message": "Hello World"}
 
+
 @app.get("/users", response_model=List[User])
 def read_users():
     """users api endpoint."""
