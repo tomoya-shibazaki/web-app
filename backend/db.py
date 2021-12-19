@@ -1,6 +1,7 @@
+"""db"""
 import os
-from dotenv import load_dotenv
 from os.path import join, dirname
+from dotenv import load_dotenv
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
@@ -20,12 +21,7 @@ password = PASSWORD
 host = HOST
 database_name = DATABASE_NAME
 
-DATABASE = 'mysql://%s:%s@%s/%s?charset=utf8' % (
-    user_name,
-    password,
-    host,
-    database_name
-)
+DATABASE = f'mysql://{user_name}:{password}@{host}/{database_name}?charset=utf8'
 
 ENGINE = create_engine(
     DATABASE,

@@ -1,17 +1,20 @@
+"""main"""
+from typing import List
 from fastapi import FastAPI
 from db import session
 from models import Users
 from schemas import User
-from typing import List
 
 app = FastAPI()
 
 
 @app.get("/")
 async def root():
+    """root api endpoint."""
     return {"message": "Hello World"}
 
 @app.get("/users", response_model=List[User])
 def read_users():
+    """users api endpoint."""
     users = session.query(Users).all()
     return users
