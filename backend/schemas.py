@@ -9,5 +9,5 @@ class User(BaseModel):
     email: str
 
     class Config:
-    """config."""
+        """config."""
         orm_mode = True
