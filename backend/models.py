@@ -6,6 +6,7 @@ from db import ENGINE
 
 class Users(Base):
     """users model."""
+
     __tablename__ = "users"
 
     id = Column(Integer, primary_key=True, index=True)
@@ -18,5 +19,5 @@ def main():
     Base.metadata.create_all(bind=ENGINE)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

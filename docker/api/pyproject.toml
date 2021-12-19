@@ -11,6 +11,7 @@ SQLAlchemy = "^1.4.28"
 uvicorn = "^0.16.0"
 python-dotenv = "^0.19.2"
 mysqlclient = "^2.1.0"
+black = "^21.12b0"
 
 [tool.poetry.dev-dependencies]
 
