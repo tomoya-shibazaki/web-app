@@ -1,5 +1,0 @@
-mysqlclient
-sqlalchemy
-uvicorn
-fastapi
-python-dotenv
